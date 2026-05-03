@@ -1,12 +1,55 @@
-# React + Vite
+# Gym Membership Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the client-side user interface for the Gym Membership Management System application. It is a modern, responsive Single Page Application (SPA) built using React and Vite, designed to handle gym management, client renewals, and general administration.
 
-Currently, two official plugins are available:
+## Key Features
+- **Modern UI**: Styled efficiently using Tailwind CSS for a clean and responsive design.
+- **Fast Build Times**: Utilizes Vite for blazing-fast hot module replacement (HMR) during development and optimized production builds.
+- **Client-Side Routing**: Implements `react-router-dom` for seamless navigation between different administrative views.
+- **Export Capabilities**: Uses `html2canvas` for potential UI screenshot/export functionalities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React** (v19)
+- **Vite** (Build Tool & Dev Server)
+- **Tailwind CSS** (Utility-first styling framework)
+- **React Router DOM** (Navigation)
+- **React Icons** (Scalable iconography)
 
-## Expanding the ESLint configuration
+## Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup Instructions
+
+1. **Clone the repository and navigate to the frontend directory:**
+   ```bash
+   cd client-side
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   The application will typically be available at `http://localhost:5173`. 
+   
+   *Note: In development mode, ensure your backend server is also running if you need to fetch real data.*
+
+## Production Build
+
+To build the application for production:
+
+```bash
+npm run build
+```
+
+This will create a `dist` folder containing the compiled static assets. 
+
+**Deployment Note:** The Gym Membership Management System backend is explicitly configured to serve these static files from the `dist` folder. After running the build command, simply starting the backend server will serve the full-stack application concurrently.
+
+## Backend Repository
+You can find the backend service repository here: [Gym Admin Backend](https://github.com/KALIL-devs/Gym_admin_backend)
